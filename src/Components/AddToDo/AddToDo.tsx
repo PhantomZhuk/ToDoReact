@@ -15,8 +15,8 @@ function AddToDo({todo, setTodo}: any) {
 
     return (
         <div>
-            <input type="text" value={value} placeholder='Add Todo' onChange={(e) => setValue((e.target as HTMLInputElement).value)} />
-            <button onClick={saveTodo}>Add</button>
+            <input className='w-[500px] h-[50px] rounded-lg outline-none bg-[#415a77] pl-[10px] text-white' type="text" value={value} placeholder='Add Todo' onChange={(e) => setValue((e.target as HTMLInputElement).value)} />
+            <button onClick={saveTodo} className='w-[100px] h-[50px] rounded-lg bg-[#415a77] text-white mx-[10px]'>Add</button>
         </div>
     );
 }
