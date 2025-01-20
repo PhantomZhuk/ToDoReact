@@ -13,6 +13,11 @@ function AddToDo({ todo, setTodo }: any) {
             title: value,
             status: false
         }]);
+        localStorage.setItem('todo', JSON.stringify([...todo, {
+            id: uuid(),
+            title: value,
+            status: false
+        }]))
         setValue('');
     }
 
