@@ -23,8 +23,8 @@ function AddToDo({ todo, setTodo }: any) {
 
     return (
         <div className='w-full flex justify-between items-center gap-3'>
-            <input className='w-[90%] h-[50px] rounded-lg outline-none bg-[#292c35] pl-[10px] text-white' type="text" value={value} placeholder='Add Todo' onChange={(e) => setValue((e.target as HTMLInputElement).value)} />
-            <button onClick={saveTodo} className='w-[50px] h-[50px] rounded-lg bg-[#292c35] text-white'><FontAwesomeIcon icon={faPlus} /></button>
+            <input className='w-[90%] h-[50px] rounded-lg outline-none bg-[#292c35] pl-[10px] text-white dark:text-[#333] dark:bg-white' type="text" value={value} placeholder='Add Todo' onChange={(e) => setValue((e.target as HTMLInputElement).value)} />
+            <button onClick={saveTodo} className='w-[50px] h-[50px] rounded-lg bg-[#292c35] text-white dark:text-[#333] dark:bg-white'><FontAwesomeIcon icon={faPlus} /></button>
         </div>
     );
 }
